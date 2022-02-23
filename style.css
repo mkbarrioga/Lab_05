@@ -209,7 +209,7 @@ a:visited{
 }
 
 @keyframes separator{
-  100%{transform: rotateY(360deg);}
+  100%{border-color: white;}
   80%{border-color: red;}
   60%{border-color:green;}
   40%{border-color: blue;}
