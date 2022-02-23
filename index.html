@@ -8,9 +8,11 @@
   </head>
 
   <body>
-    <video autoplay loop muted src="media/stars.mp4"></video>  
-    <header>
-      <h1>PLANETS</h1>
+    <video id="bg" autoplay loop muted src="media/stars.mp4"></video>  
+     <header>
+      <div id="webname">
+        <h1>PLANETS</h1>
+      </div>
     </header>
     <main>
       <section>
@@ -30,70 +32,66 @@
         </p>     
       </section>
 
-      <section>
-        <div>
-          <h2>Here are some of the planets in our Solar System:</h2>
-        </div>
-        <div>
-          <table>
+      <div id="tableContainer">
+          <table id="planetaryTable">
             <tr>
               <th>Properties</th>
-              <th><video autoplay loop muted class="tablevids" src="media/earth.mp4"></th>
-              <th><video autoplay loop muted class="tablevids" src="media/mars.mp4"></th>
-              <th><video autoplay loop muted class="tablevids" src="media/jupiter.mp4"></th>
-              <th><video autoplay loop muted class="tablevids" src="media/saturn.mp4"></th>      
+              <th class="media"><video autoplay loop muted class="tablevids" src="media/earth.mp4"></th>
+              <th class="media"><video autoplay loop muted class="tablevids" src="media/mars.mp4"></th>
+              <th class="media"><video autoplay loop muted class="tablevids" src="media/jupiter.mp4"></th>
+              <th class="media"><video autoplay loop muted class="tablevids" src="media/saturn.mp4"></th>      
             </tr>
             <tr>
-              <td>Name:</td>
-              <td>Earth</td>
-              <td>Mars</td>
-              <td>Jupiter</td>
-              <td>Saturn</td>
+              <td class="attrib">Name:</td>
+              <td id="earth"><a href="https://pds.nasa.gov/planets/special/earth.htm" target=_blank title="click to learn more">Earth</a></td>
+              <td id="mars"><a href="https://pds.nasa.gov/planets/special/mars.htm" target=_blank title="click to learn more">Mars</a></td>
+              <td id="jupiter"><a href="https://pds.nasa.gov/planets/special/jupiter.htm" target=_blank title="click to learn more">Jupiter</a></td>
+              <td id="saturn"><a href="https://pds.nasa.gov/planets/special/saturn.htm" target=_blank title="click to learn more">Saturn</a></td>
             </tr>
             <tr>
-              <td>Mass (kg):</td>
+              <td class="attrib">Mass (kg):</td>
               <td>5.98 x 10<sup>24</sup></td>
               <td>6.42 x 10<sup>23</sup></td>
               <td>1.90 x 10<sup>27</sup></td>
               <td>5.69 x 10<sup>26</sup></td>
             </tr>
             <tr>
-              <td>Diameter (km):</td>
+              <td class="attrib">Diameter (km):</td>
               <td>12,756</td>
               <td>6,787</td>
               <td>142,800</td>
               <td>120,660</td>
             </tr>
             <tr>
-              <td>Mean Density (kg/m<sup>3</sup>):</td>
+              <td class="attrib">Mean Density (kg/m<sup>3</sup>):</td>
               <td>5,520</td>
               <td>3,940</td>
               <td>1,314</td>
               <td>690</td>
             </tr>
             <tr>
-              <td>Escape Velocity (m/s):</td>
+              <td class="attrib">Escape Velocity (m/s):</td>
               <td>11,200</td>
               <td>5,000</td>
               <td>59,500</td>
               <td>35,600</td>
             </tr>
             <tr>
-              <td>Avg. Dist. from Sun:</td>
+              <td class="attrib">Avg. Dist. from Sun:</td>
               <td>1 AU (149,597,890 km)</td>
               <td>1.524 AU (227,936,640 km)</td>
               <td>5.203 AU (778,412,020 km)</td>
               <td>9.537 AU (1,426,725,400 km)</td>
             </tr>
             <tr>
-              <td>Rotation Period (length of day in Earth days):</td>
+              <td class="attrib">Rotation Period (length of day in Earth days):</td>
               <td>1 (23.93 hours)</td>
               <td>1.026</td>
               <td>0.41 (9.8 Earth hours)</td>
               <td>0.44 (10.2 Earth hours)</td>
             </tr>
             <tr>
-              <td>Revolution Period (length of year in Earth days):</td>
+              <td class="attrib">Revolution Period (length of year in Earth days):</td>
               <td>365.26</td>
               <td>686.98</td>
               <td>11.86</td>
@@ -103,5 +101,11 @@
         </div>
       </section>
     </main>
+    <footer>
+      <p>Lab_05</p>
+      <p>Developed By: Marc Kevin Barrioga</p>
+      <p>Illinois Institute of Technology</p>
+      <audio controls autoplay loop src="media/Star Wars Theme  John Williams.mp3"></audio>
+    </footer>
   </body>
 </html>
